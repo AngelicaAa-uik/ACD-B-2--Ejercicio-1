@@ -1,0 +1,41 @@
+  Algoritmo GESTION_JOYAS_VENDIDAS
+    Clase Joyeria
+      1.  Declarar varibales
+          categoría: Cadena
+          listaPrecios: <<Arreglo>> [n] real
+          promedioVent: real
+      2.  Metodo Joyeria(cat: Cadena, arregloPrecios[]: <<Arreglo>> real)
+          a.  Categoría = cat
+          b.  listaPrecios = arregloPrecios[]
+          c.  Fin Metodo Joyeria
+      3.  Metodo toString(): Cadena
+          a.  mensaje: Cadena
+          b.  mensaje=”Categoria: ” ,obtenerCategoria(), “,Precio: ” ,obtenerlistaPrecios(): <<Arreglo>> [] real, “,Promedio de ventas: ” ,obtenerPromedioVent()
+          c.  return mensaje
+          d.  Fin Metodo toString
+      4.  Metodo calcularPromdioVent()
+          a.  Declarar variables locales
+              1.  suma: real = 0
+              2.  for int i=0; i<Longitud(listaPrecios); i++
+                 suma = suma + listaPrecio[i]
+              3.  endfor
+              4.  promedioVent = suma/ Longitud(listaPrecios)
+              5.  Fin Metodo calcularPromdioVent
+    Fin Clase Joyeria
+    Clase PruebaJoyeria
+      1.  Metodo principal()
+          a.  Declarar variables
+             categJoya: Cadena
+             lista_precios: <<Arreglo>>[n] real
+
+          b.  Asignar valores
+             categJoya = “Collares”
+             lista_precios[4] = {100.50, 45.70, 756.0, 56.12}
+
+          c.  Declarar, crear e inicializar objetos
+             Joyeria joyas = new Joyeris(categJoya, lista_precios)
+
+          d.  Joyas.calcularPromedioVent()
+          e.  Imprimir joyas.toString()
+    Fin Clase PruebaJoyeria
+  Fin 
